@@ -1,10 +1,66 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="en">
-<head>
+  <head>
+   <!-- <meta charset="UTF-8">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">-->
+    <input type="file" onchange="previewFile()"><br>
+    <img src="" height="200" alt="Image preview...">
+<style>
+body {margin:0;}
+div {
+    background-color: #333;
+    width: 800px;
+    padding: 20px;
+    border: 2px solid #FF4444;
+    margin-top: 30px;  
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #FF4444;
+}
+</style>
+</head>
+
+<body     
+style="black;text-align:center;font:bold 14px Estrangelo Edessa;
+text-transform:color:#8b0000;
+"
+background="http://www.self.com/wp-content/uploads/2015/06/five-guys-870-820x518.jpg"
 <title>Login</title>
 </head>
 <body>
-
+<ul>
+  <li><a class="active" href="#home">HOME</a></li>     
+  <li><a href="http://www.greenwichrugby.com/in-the-news.html">NEWS</a></li>     
+  <li><a href="#contact">CONTACT</a></li>
+  <li><a href="#about">ABOUT</a></li>
+  <li><a href="http://www.greenwichrugby.com/schedule.html">SCHEDULE</a></li>   
+</ul>
 <script type="text/javascript">
 
 function CheckPassword() {
@@ -21,7 +77,7 @@ function CheckPassword() {
 Username: <input type="text" name="username">
 Password: <input type="password" name="password">
 </pre>
-<input type="submit" value="log in" 
+<input type="submit" value="log på" 
   onclick="CheckPassword();return false;">
 </form>
 
